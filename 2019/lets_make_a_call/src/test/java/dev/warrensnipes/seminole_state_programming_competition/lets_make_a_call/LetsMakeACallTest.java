@@ -19,17 +19,9 @@ public class LetsMakeACallTest {
     }
 
     @Test
-    public void test1() {
+    public void testGetPhoneNumber() {
         assertEquals("1-800-3569377", LetsMakeACall.getPhoneNumber(map, "1-800-FLOWERS"));
-    }
-
-    @Test
-    public void test2() {
         assertEquals("1-800-4633339", LetsMakeACall.getPhoneNumber(map, "1-800-GOFEDEX"));
-    }
-
-    @Test
-    public void test3() {
         assertEquals("1-496-367-7368", LetsMakeACall.getPhoneNumber(map, "1-GYM-FOR-RENT"));
     }
 }

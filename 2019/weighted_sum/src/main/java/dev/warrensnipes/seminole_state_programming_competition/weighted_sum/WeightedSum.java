@@ -21,6 +21,7 @@ public class WeightedSum {
         char[] charArray = s.toCharArray();
         for (int i = 0; i < charArray.length; i++) {
             int integer = Integer.parseInt(String.valueOf(charArray[i]));
+            // multiply the integer by the index + 1 to calculate the weighted sum
             sum += integer * (i + 1);
         }
         return sum;

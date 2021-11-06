@@ -7,17 +7,9 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class WeightedSumTest {
 
     @Test
-    public void test1() {
+    public void testGetSum() {
         assertEquals(19, WeightedSum.getSum("57"));
-    }
-
-    @Test
-    public void test2() {
         assertEquals(113, WeightedSum.getSum("482178"));
-    }
-
-    @Test
-    public void test3() {
         assertEquals(67, WeightedSum.getSum("32058"));
     }
 }
