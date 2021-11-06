@@ -17,3 +17,9 @@ dependencies {
 tasks.getByName<Test>("test") {
     useJUnitPlatform()
 }
+
+tasks.withType<Jar> {
+    manifest {
+        attributes["Main-Class"] = "dev.warrensnipes.seminole_state_programming_competition.number_freqency.NumberFrequency"
+    }
+}
