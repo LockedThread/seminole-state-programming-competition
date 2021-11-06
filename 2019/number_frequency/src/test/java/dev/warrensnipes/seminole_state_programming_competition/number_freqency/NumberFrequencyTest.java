@@ -18,7 +18,7 @@ public class NumberFrequencyTest {
         expectedOutput.put(100, 2);
 
         HashMap<Integer, Integer> testMap = NumberFrequency.getFrequencyMap("44 44 78 44 100 1 1 1 100 44 55 0");
-        assertEquals(testMap, expectedOutput);
+        assertEquals(expectedOutput, testMap);
     }
 
     @Test
@@ -27,7 +27,7 @@ public class NumberFrequencyTest {
         expectedOutput.put(44, 1);
 
         HashMap<Integer, Integer> testMap = NumberFrequency.getFrequencyMap("44 0");
-        assertEquals(testMap, expectedOutput);
+        assertEquals(expectedOutput, testMap);
     }
 
     @Test
@@ -43,6 +43,6 @@ public class NumberFrequencyTest {
         expectedOutput.put(100, 2);
 
         HashMap<Integer, Integer> testMap = NumberFrequency.getFrequencyMap("99 1 19 1 22 100 22 33 99 22 65 34 33 22 100 99 0");
-        assertEquals(testMap, expectedOutput);
+        assertEquals(expectedOutput, testMap);
     }
 }

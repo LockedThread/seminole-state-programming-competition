@@ -8,16 +8,16 @@ public class WeightedSumTest {
 
     @Test
     public void test1() {
-        assertEquals(WeightedSum.getSum("57"), 19);
+        assertEquals(19, WeightedSum.getSum("57"));
     }
 
     @Test
     public void test2() {
-        assertEquals(WeightedSum.getSum("482178"), 113);
+        assertEquals(113, WeightedSum.getSum("482178"));
     }
 
     @Test
     public void test3() {
-        assertEquals(WeightedSum.getSum("32058"), 67);
+        assertEquals(67, WeightedSum.getSum("32058"));
     }
 }
